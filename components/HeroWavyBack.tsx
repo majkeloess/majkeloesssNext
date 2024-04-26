@@ -52,22 +52,26 @@ export default function HeroBackground() {
           variants={animations.textVariant(0.5)}
           initial="hidden"
           whileInView="show"
-          className="h-[18rem] w-[18rem] rounded-full border-2 bg-cover bg-center border-blue-400 bg-gray-700"
+          className="h-[18rem] w-[18rem] rounded-full border-2 bg-cover bg-center border-blue-400"
+          style={{
+            backgroundImage: `url('https://github.com/majkeloess.png')`,
+          }}
         >
-          <Image
-            src="/majkeloess.png"
+          {/* <Image
+            src="/temporary.png"
             width={300}
             height={300}
             alt="majkeloess"
             priority={true}
-          />
+            objectFit="cover"
+          /> */}
         </motion.div>
       </div>
       <motion.div
         variants={animations.zoomIn(0.5, 0.5)}
         initial="hidden"
         whileInView="show"
-        className="fixed bottom-0 m-4"
+        className="fixed bottom-0 m-4 hidden xl:block"
       >
         <Footer />
       </motion.div>
