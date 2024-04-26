@@ -25,8 +25,8 @@ export default function HeroBackground() {
               <p className="text-6xl lg:text-8xl text-white font-bold inter-var text-center">
                 {/* majke<span className="text-indigo-500 hidden xl:block">e</span> */}
                 majkeloe
-                <span className="text-purple-500">s</span>
-                <span className="text-blue-400">s</span>
+                <span className="text-purple-600">s</span>
+                <span className="text-blue-500">s</span>
               </p>
               <p className="text-base md:text-lg lg:text-xl mt-4 text-white font-normal inter-var text-center">
                 Computer Science student with a passion for webDevelopment
@@ -56,16 +56,7 @@ export default function HeroBackground() {
           style={{
             backgroundImage: `url('https://github.com/majkeloess.png')`,
           }}
-        >
-          {/* <Image
-            src="/temporary.png"
-            width={300}
-            height={300}
-            alt="majkeloess"
-            priority={true}
-            objectFit="cover"
-          /> */}
-        </motion.div>
+        ></motion.div>
       </div>
       <motion.div
         variants={animations.zoomIn(0.5, 0.5)}
