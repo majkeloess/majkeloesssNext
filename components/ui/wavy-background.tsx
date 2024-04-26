@@ -111,12 +111,12 @@ export default function WavyBackground({
   return (
     <div
       className={cn(
-        "h-screen flex flex-col items-center justify-center",
+        "h-screen w-screen flex flex-col items-center justify-center",
         containerClassName
       )}
     >
       <canvas
-        className="absolute lg:h-auto h-screen inset-0 z-0"
+        className="absolute lg:h-auto h-screen w-screen inset-0 z-0"
         ref={canvasRef}
         id="canvas"
         style={{

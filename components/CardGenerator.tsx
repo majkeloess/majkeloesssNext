@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 export default function CardGenerator() {
   return (
-    <motion.div className="2xl:grid 2xl:grid-cols-2 xl:mx-48 flex flex-col">
+    <motion.div className="xl:grid xl:grid-cols-2 2xl:mx-48 xl:mx-20 flex flex-col">
       {projects.map((project, index) => {
         const ref = useRef(null);
         const inView = useInView(ref, { once: true });

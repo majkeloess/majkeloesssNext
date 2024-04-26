@@ -51,14 +51,14 @@ const StravaData = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex flex-row text-2xl lg:text-sm xl:text-2xl items-center">
-        <p>My </p>
-        <IconRun size={50} color="#38bdf8" />
-        <p>
-          stats this yea<span className="text-purple-500">r</span>:{" "}
+        <p className="flex items-center justify-center text-2xl lg:text-sm xl:text-2xl">
+          My
+          <IconRun size={50} color="#38bdf8" />
+          this year:{" "}
         </p>
       </div>
       <div className="text-xl  text-white mt-4 mb-2 text-center">
-        <ul className="w-[300px] xl:w-[300px] lg:w-[200px]">
+        <ul className="w-[300px] xl:w-[250px] 2xl:w-[300px] lg:w-[200px]">
           <li className="mb-2">
             <div className="flex flex-row justify-between ">
               <p>
