@@ -5,9 +5,8 @@ import WavyBackground from "./ui/wavy-background";
 import Link from "next/link";
 import MainButton from "./MainButton";
 import Footer from "./Footer";
-import Image from "next/image";
-
 import animations from "@/lib/motion";
+
 export default function HeroBackground() {
   return (
     <WavyBackground className="lg:pb-40 pb-16 flex flex-col items-center gap-10">
@@ -23,7 +22,6 @@ export default function HeroBackground() {
                 Hi, I am
               </p>
               <p className="text-6xl lg:text-8xl text-white font-bold inter-var text-center">
-                {/* majke<span className="text-indigo-500 hidden xl:block">e</span> */}
                 majkeloe
                 <span className="text-purple-600">s</span>
                 <span className="text-indigo-600">s</span>

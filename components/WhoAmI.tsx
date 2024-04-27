@@ -1,29 +1,55 @@
-"use client";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import BackgroundGradient from "@/components/ui/background-gradient";
+import dynamic from "next/dynamic";
+const Whoami1 = dynamic(() => import("@/components/Whoami1"));
+const Whoami2 = dynamic(() => import("@/components/Whoami2"));
+const Whoami3 = dynamic(() => import("@/components/Whoami3"));
+import Whoami4 from "@/components/Whoami4";
 
-import StravaData from "./StravaData";
-import Whoami1 from "./Whoami1";
-import Whoami2 from "./Whoami2";
-import Whoami3 from "./Whoami3";
-import Whoami4 from "./Whoami4";
+async function getData() {
+  const token = await fetch("https://www.strava.com/api/v3/oauth/token", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams({
+      client_id: `${process.env.NEXT_PUBLIC_STRAVA_CLIENT_ID}`,
+      client_secret: `${process.env.NEXT_PUBLIC_STRAVA_CLIENT_SECRET}`,
+      grant_type: "refresh_token",
+      refresh_token: `${process.env.NEXT_PUBLIC_STRAVA_REFRESH_TOKEN}`,
+    }),
+  });
 
-export default function WhoAmI() {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
+  const tokenData = await token.json();
+
+  const data = await fetch(
+    "https://www.strava.com/api/v3/athletes/113560517/stats",
+    {
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${tokenData.access_token}`,
+      },
+    }
+  );
+
+  return data.json();
+}
+
+export default async function WhoAmI() {
+  const strava = await getData();
+
   return (
     <div className="flex justify-center flex-col items-center mb-20">
       <div className="lg:w-7/12 flex lg:flex-row  gap-8 lg:mt-40 mt-24 items-center flex-col">
         <Whoami1 />
         <Whoami2 />
       </div>
-      {/* tutaj drugra kolumna */}
       <div className="lg:w-7/12 flex flex-col lg:flex-row gap-8 mt-10 items-center">
         <Whoami3 />
-        <Whoami4 />
+        <Whoami4
+          count={strava.ytd_run_totals.count}
+          distance={strava.ytd_run_totals.distance}
+          moving_time={strava.ytd_run_totals.moving_time}
+          elevation_gain={strava.ytd_run_totals.elevation_gain}
+        />
       </div>
     </div>
   );

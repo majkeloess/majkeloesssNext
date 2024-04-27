@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mui/material": "^5.15.15",
     "@tabler/icons-react": "^3.2.0",
     "@vercel/speed-insights": "^1.0.10",
     "clsx": "^2.1.1",

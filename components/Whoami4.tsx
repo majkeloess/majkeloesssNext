@@ -4,7 +4,17 @@ import { useInView } from "framer-motion";
 import BackgroundGradient from "@/components/ui/background-gradient";
 import StravaData from "./StravaData";
 import { motion } from "framer-motion";
-export default function Whoami4() {
+export default function Whoami4({
+  count,
+  distance,
+  moving_time,
+  elevation_gain,
+}: {
+  count: number;
+  distance: number;
+  moving_time: number;
+  elevation_gain: number;
+}) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   return (
@@ -16,7 +26,12 @@ export default function Whoami4() {
       transition={{ type: "spring", delay: 2.5, duration: 1 }}
     >
       <BackgroundGradient className="rounded-[22px] p-6 lg:p-10 bg-black">
-        <StravaData />
+        <StravaData
+          count={count}
+          distance={distance}
+          moving_time={moving_time}
+          elevation_gain={elevation_gain}
+        />
       </BackgroundGradient>
     </motion.div>
   );
