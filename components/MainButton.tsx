@@ -1,6 +1,3 @@
-"use client";
-import { motion } from "framer-motion";
-
 export default function MainButton({ text }: { text: string }) {
   return (
     <button className="p-[3px] relative">

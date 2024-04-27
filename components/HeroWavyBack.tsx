@@ -46,7 +46,7 @@ export default function HeroBackground() {
             </motion.div>
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           variants={animations.textVariant(0.5)}
           initial="hidden"
           whileInView="show"
@@ -54,7 +54,7 @@ export default function HeroBackground() {
           style={{
             backgroundImage: `url('https://github.com/majkeloess.png')`,
           }}
-        ></motion.div>
+        ></motion.div> */}
       </div>
       <motion.div
         variants={animations.zoomIn(0.5, 0.5)}
