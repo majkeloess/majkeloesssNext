@@ -19,7 +19,7 @@ const projects = [
     projectDescription: "A user-friendly weather application.",
     projectPhoto: "/weather_1.webp",
     projectGh: "https://github.com/majkeloess/weatherApp",
-    projectPage: "https://majkeloess.dev/weatherApp",
+    projectPage: "https://weatherapp.majkeloess.dev",
   },
   {
     icons: ["react", "tailwind", "typescript", "api"],
@@ -43,7 +43,7 @@ const projects = [
     projectDescription: "My previous portfolio page written in plain React.",
     projectPhoto: "/majkeloessweb.webp",
     projectGh: "https://github.com/majkeloess/majkeloessWeb",
-    projectPage: "https://majkeloess.github.io/majkeloessWeb/",
+    projectPage: "https://oldpage.majkeloess.dev/",
   },
   {
     icons: ["html", "css"],
@@ -52,13 +52,13 @@ const projects = [
       "My first portfolio page written in plain HTML and CSS.",
     projectPhoto: "/majkeloessweb01.webp",
     projectGh: "https://github.com/majkeloess/majkeloessWeb",
-    projectPage: "https://majkeloess.github.io/majkeloessWeb/",
+    projectPage: "https://majkeloess.github.io/myWebpageOld",
   },
   {
     icons: ["html", "css", "javascript"],
     projectName: "simpleCalculator",
     projectDescription: "My first project :)",
-    projectPhoto: "/calculator.webp",
+    projectPhoto: "/calc.webp",
     projectGh: "https://github.com/majkeloess/calculator",
     projectPage: "https://majkeloess.github.io/calculator/",
   },
