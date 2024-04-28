@@ -8,7 +8,6 @@ export default function Projects() {
   return (
     <div className="bg-black">
       <NavProjects />
-      {/* koniec navu */}
       <div className="flex flex-col justify-center align-middle">
         <div className="hidden xl:block">
           <DeviceList />
@@ -16,7 +15,6 @@ export default function Projects() {
         <div className="xl:hidden block">
           <MobileList />
         </div>
-        {/* kartki */}
         <CardGenerator />
       </div>
       <div className="text-center m-4">

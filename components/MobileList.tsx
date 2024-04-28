@@ -74,7 +74,7 @@ export default function MobileList() {
         </MotionLi>
       </MotionUl>
       <MotionUl
-        variants={animations.parentList}
+        variants={animations.parentListSecond}
         initial="hidden"
         animate="show"
         className="flex flex-row justify-center align-middle items-center gap-2 my-4"

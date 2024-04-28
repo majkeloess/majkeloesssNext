@@ -11,7 +11,7 @@ export default function CardGenerator() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              delay: index % 2 == 0 ? 0.5 : 0.75,
+              delay: index * 0.5 + 5,
               duration: 1,
               type: "spring",
             }}

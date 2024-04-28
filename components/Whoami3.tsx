@@ -7,7 +7,7 @@ export default function Whoami3() {
       className="lg:w-7/12 max-w-[80%] lg:max-w-full"
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ type: "spring", delay: 2, duration: 1 }}
+      transition={{ type: "spring", delay: 2.8, duration: 0.8 }}
     >
       <BackgroundGradient className="rounded-[22px] p-4 lg:p-10 bg-black">
         <p className="text-lg lg:text-xl text-white py-2">

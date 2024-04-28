@@ -15,7 +15,7 @@ const animations = {
       transition: {
         type: "spring",
         stiffness: 80,
-        delay: 0.5,
+        delay: 0.8,
       },
     },
   },
@@ -35,8 +35,18 @@ const animations = {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
+        delayChildren: 1.5,
+        staggerChildren: 0.3,
+      },
+    },
+  },
+  parentListSecond: {
+    hidden: { opacity: 1 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 3.2,
+        staggerChildren: 0.3,
       },
     },
   },
@@ -83,7 +93,7 @@ const animations = {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 1.25,
+        duration: 1.5,
         delay,
       },
     },

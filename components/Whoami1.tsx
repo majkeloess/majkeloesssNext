@@ -15,7 +15,7 @@ export default function Whoami1() {
     <MotionDiv
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", delay: 1, duration: 1 }}
+      transition={{ type: "spring", delay: 1.4, duration: 0.8 }}
       className="lg:w-5/6"
     >
       <BackgroundGradient className="rounded-[22px] p-4 lg:p-10 bg-black">
