@@ -1,16 +1,10 @@
-"use client";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 import BackgroundGradient from "@/components/ui/background-gradient";
-import { motion } from "framer-motion";
+import { MotionDiv } from "./MotionDiv";
 
 export default function Whoami3() {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
   return (
-    <motion.div
+    <MotionDiv
       className="lg:w-7/12 max-w-[80%] lg:max-w-full"
-      ref={ref}
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ type: "spring", delay: 2, duration: 1 }}
@@ -36,6 +30,6 @@ export default function Whoami3() {
           .
         </p>
       </BackgroundGradient>
-    </motion.div>
+    </MotionDiv>
   );
 }

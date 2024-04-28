@@ -1,12 +1,10 @@
-"use client";
-
 import animations from "@/lib/motion";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { MotionDiv } from "./MotionDiv";
 
 export default function NavWhoami() {
   return (
-    <motion.div
+    <MotionDiv
       variants={animations.navVariants}
       initial="hidden"
       whileInView="show"
@@ -20,6 +18,6 @@ export default function NavWhoami() {
         &gt; w<span className="text-indigo-400">h</span>oami
       </p>
       <div className="h-0.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400"></div>
-    </motion.div>
+    </MotionDiv>
   );
 }

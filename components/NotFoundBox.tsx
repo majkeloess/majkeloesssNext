@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import BackgroundGradient from "@/components/ui/background-gradient";
 

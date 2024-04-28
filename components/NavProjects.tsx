@@ -1,11 +1,10 @@
-"use client";
 import animations from "@/lib/motion";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { MotionDiv } from "./MotionDiv";
 
 export default function NavProjects() {
   return (
-    <motion.div
+    <MotionDiv
       variants={animations.navVariants}
       initial="hidden"
       whileInView="show"
@@ -19,6 +18,6 @@ export default function NavProjects() {
         &gt; <span className="text-indigo-400">p</span>rojects
       </p>
       <div className="h-0.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400"></div>
-    </motion.div>
+    </MotionDiv>
   );
 }

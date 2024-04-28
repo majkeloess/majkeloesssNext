@@ -1,4 +1,3 @@
-"use client";
 import {
   IconUser,
   IconMapPin,
@@ -7,18 +6,13 @@ import {
   IconAdjustmentsHeart,
   IconMail,
 } from "@tabler/icons-react";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import BackgroundGradient from "@/components/ui/background-gradient";
+import { MotionDiv } from "./MotionDiv";
 
 export default function Whoami1() {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
   return (
-    <motion.div
-      ref={ref}
+    <MotionDiv
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", delay: 1, duration: 1 }}
@@ -62,6 +56,6 @@ export default function Whoami1() {
           </li>
         </ul>
       </BackgroundGradient>
-    </motion.div>
+    </MotionDiv>
   );
 }

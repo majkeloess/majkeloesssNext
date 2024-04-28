@@ -1,22 +1,15 @@
-"use client";
-import { motion } from "framer-motion";
 import projects from "@/lib/projects";
 import Card3D from "./Card3D";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { MotionDiv } from "./MotionDiv";
 
 export default function CardGenerator() {
   return (
-    <motion.div className="xl:grid xl:grid-cols-2 2xl:mx-48 xl:mx-20 flex flex-col">
+    <MotionDiv className="xl:grid xl:grid-cols-2 2xl:mx-48 xl:mx-20 flex flex-col">
       {projects.map((project, index) => {
-        const ref = useRef(null);
-        const inView = useInView(ref, { once: true });
-
         return (
-          <motion.div
-            ref={ref}
+          <MotionDiv
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               delay: index % 2 == 0 ? 0.5 : 0.75,
               duration: 1,
@@ -33,9 +26,9 @@ export default function CardGenerator() {
               projectPage={project.projectPage}
               index={index}
             />
-          </motion.div>
+          </MotionDiv>
         );
       })}
-    </motion.div>
+    </MotionDiv>
   );
 }

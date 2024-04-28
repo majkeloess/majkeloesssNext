@@ -1,9 +1,7 @@
-"use client";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 import BackgroundGradient from "@/components/ui/background-gradient";
 import StravaData from "./StravaData";
-import { motion } from "framer-motion";
+import { MotionDiv } from "./MotionDiv";
+
 export default function Whoami4({
   count,
   distance,
@@ -15,12 +13,9 @@ export default function Whoami4({
   moving_time: number;
   elevation_gain: number;
 }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
   return (
-    <motion.div
+    <MotionDiv
       className="lg:w-5/12"
-      ref={ref}
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", delay: 2.5, duration: 1 }}
@@ -33,6 +28,6 @@ export default function Whoami4({
           elevation_gain={elevation_gain}
         />
       </BackgroundGradient>
-    </motion.div>
+    </MotionDiv>
   );
 }

@@ -1,7 +1,6 @@
-import dynamic from "next/dynamic";
-const Whoami1 = dynamic(() => import("@/components/Whoami1"));
-const Whoami2 = dynamic(() => import("@/components/Whoami2"));
-const Whoami3 = dynamic(() => import("@/components/Whoami3"));
+import Whoami1 from "@/components/Whoami1";
+import Whoami2 from "@/components/Whoami2";
+import Whoami3 from "@/components/Whoami3";
 import Whoami4 from "@/components/Whoami4";
 
 async function getData() {

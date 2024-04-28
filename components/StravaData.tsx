@@ -1,5 +1,4 @@
 import { IconRun } from "@tabler/icons-react";
-
 export default function StravaData({
   count,
   distance,
