@@ -12,6 +12,8 @@ const projects = [
     projectName: "Apollo",
     projectDescription: "My biggest project that I'm currently working on.",
     projectPhoto: "/apollo.webp",
+    projectGh: "https://github.com/majkeloess/Apollo",
+    projectPage: "https://apollo.majkeloess.dev/",
   },
   {
     icons: ["react", "tailwind", "framermotion", "api"],

@@ -93,7 +93,7 @@ const animations = {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 1.5,
+        duration: 1.2,
         delay,
       },
     },
