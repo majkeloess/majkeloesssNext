@@ -5,6 +5,9 @@ import Whoami4 from "@/components/Whoami4";
 
 async function getData() {
   const token = await fetch("https://www.strava.com/api/v3/oauth/token", {
+    next: {
+      revalidate: 86400,
+    },
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -25,6 +28,9 @@ async function getData() {
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${tokenData.access_token}`,
+      },
+      next: {
+        revalidate: 86400,
       },
     }
   );

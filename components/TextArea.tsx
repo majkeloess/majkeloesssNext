@@ -13,7 +13,7 @@ export default function TextArea() {
       <p className="text-6xl lg:text-8xl text-white font-bold inter-var text-center">
         majkeloe
         <span className="text-purple-600">s</span>
-        <span className="text-indigo-600">s</span>
+        <span className="text-cyan-500">s</span>
       </p>
       <p className="text-base md:text-lg lg:text-xl mt-4 text-white font-normal inter-var text-center">
         Computer Science student with a passion for webDevelopment
