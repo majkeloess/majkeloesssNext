@@ -30,7 +30,7 @@ async function getData() {
         Authorization: `Bearer ${tokenData.access_token}`,
       },
       next: {
-        revalidate: 86400,
+        revalidate: 100,
       },
     }
   );
