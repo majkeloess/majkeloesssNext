@@ -6,7 +6,7 @@ const projects = [
       "typescript",
       "reactnative",
       "api",
-      "database",
+      "prisma",
       "oauth",
     ],
     projectName: "Apollo",

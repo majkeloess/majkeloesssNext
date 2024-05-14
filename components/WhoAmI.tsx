@@ -29,9 +29,7 @@ async function getData() {
         Accept: "application/json",
         Authorization: `Bearer ${tokenData.access_token}`,
       },
-      next: {
-        revalidate: 100,
-      },
+      cache: "no-store",
     }
   );
 

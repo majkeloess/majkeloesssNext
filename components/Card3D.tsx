@@ -22,6 +22,7 @@ import {
   IconAuth2fa,
   IconBrandThreejs,
   IconBrandOauth,
+  IconBrandPrisma,
 } from "@tabler/icons-react";
 
 const iconMapping: { [key: string]: JSX.Element } = {
@@ -31,6 +32,7 @@ const iconMapping: { [key: string]: JSX.Element } = {
   reactnative: <IconBrandReactNative size={40} key="reactnative" />,
   api: <IconApi size={40} key="api" />,
   database: <IconDatabase size={40} key="database" />,
+  prisma: <IconBrandPrisma size={40} key="prisma" />,
   authorization: <IconAuth2fa size={40} key="authorization" />,
   react: <IconBrandReact size={40} key="react" />,
   framermotion: <IconBrandFramerMotion size={40} key="framermotion" />,
