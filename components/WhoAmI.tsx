@@ -29,11 +29,10 @@ async function getData() {
         Accept: "application/json",
         Authorization: `Bearer ${tokenData.access_token}`,
       },
-      cache: "no-store",
+      cache: "reload",
     }
   );
   const jsonData = await data.json();
-  //console.log(jsonData);
   return jsonData;
 }
 
