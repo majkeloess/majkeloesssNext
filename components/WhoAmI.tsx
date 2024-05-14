@@ -32,8 +32,9 @@ async function getData() {
       cache: "no-store",
     }
   );
-
-  return data.json();
+  const jsonData = await data.json();
+  //console.log(jsonData);
+  return jsonData;
 }
 
 export default async function WhoAmI() {
