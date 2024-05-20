@@ -2,12 +2,11 @@ import Whoami1 from "@/components/Whoami1";
 import Whoami2 from "@/components/Whoami2";
 import Whoami3 from "@/components/Whoami3";
 import Whoami4 from "@/components/Whoami4";
+import { unstable_noStore } from "next/cache";
 
 async function getData() {
+  unstable_noStore();
   const token = await fetch("https://www.strava.com/api/v3/oauth/token", {
-    next: {
-      revalidate: 86400,
-    },
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

@@ -3,6 +3,11 @@ import Footer from "@/components/Footer";
 import MobileList from "@/components/MobileList";
 import CardGenerator from "@/components/CardGenerator";
 import NavProjects from "@/components/NavProjects";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "projects",
+};
 
 export default function Projects() {
   return (
