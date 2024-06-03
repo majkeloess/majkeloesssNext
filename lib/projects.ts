@@ -4,7 +4,7 @@ const projects = [
     projectName: "Apollo",
     projectDescription: "My biggest project that I'm currently working on.",
     projectPhoto: "/apollo_1.png",
-    projectGh: "https://github.com/majkeloess/ApolloApp",
+    projectGh: "https://github.com/majkeloess/apollo",
     projectPage: "https://apollo.majkeloess.dev/",
   },
   {
