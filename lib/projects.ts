@@ -1,18 +1,10 @@
 const projects = [
   {
-    icons: [
-      "nextjs",
-      "tailwind",
-      "typescript",
-      "reactnative",
-      "api",
-      "prisma",
-      "oauth",
-    ],
+    icons: ["nextjs", "tailwind", "typescript", "prisma", "oauth"],
     projectName: "Apollo",
     projectDescription: "My biggest project that I'm currently working on.",
-    projectPhoto: "/apollo.webp",
-    projectGh: "https://github.com/majkeloess/Apollo",
+    projectPhoto: "/apollo_1.png",
+    projectGh: "https://github.com/majkeloess/ApolloApp",
     projectPage: "https://apollo.majkeloess.dev/",
   },
   {
