@@ -2,10 +2,28 @@ const projects = [
   {
     icons: ["nextjs", "tailwind", "typescript", "prisma", "oauth"],
     projectName: "Apollo",
-    projectDescription: "My biggest project that I'm currently working on.",
+    projectDescription:
+      "Fullstack social media platform for tracking and sharing your personal development journey",
     projectPhoto: "/apollo_1.png",
     projectGh: "https://github.com/majkeloess/apollo",
     projectPage: "https://apollo.majkeloess.dev/",
+  },
+  {
+    icons: ["react", "tailwind", "typescript"],
+    projectName: "matchflix",
+    projectDescription:
+      "Is a movie-swiping app, similar to Tinder but for movies. Users can filter movies by genre, making it easy to find films that match their preferences.",
+    projectPhoto: "/matchflix.png",
+    projectGh: "https://github.com/majkeloess/matchflix",
+    projectPage: "https://majkeloess.github.io/matchflix/",
+  },
+  {
+    icons: ["reactnative", "typescript", "tailwind"],
+    projectName: "learnTube",
+    projectDescription:
+      "Application is an simple learning platform where you can search for videos, watch them and make notes",
+    projectPhoto: "/learnTube.png",
+    projectGh: "https://github.com/majkeloess/learnTube",
   },
   {
     icons: ["react", "tailwind", "framermotion", "api"],
@@ -14,6 +32,20 @@ const projects = [
     projectPhoto: "/weather_1.webp",
     projectGh: "https://github.com/majkeloess/weatherApp",
     projectPage: "https://weatherapp.majkeloess.dev",
+  },
+  {
+    icons: ["php", "tailwind"],
+    projectName: "placeholderShop",
+    projectDescription: "shop website built with Symfony PHP & Twig",
+    projectPhoto: "/placeholder.png",
+    projectGh: "https://github.com/majkeloess/placeholderShop",
+  },
+  {
+    icons: ["php", "css"],
+    projectName: "blog",
+    projectDescription: "minimalistic dynamic blog website",
+    projectPhoto: "/blog.png",
+    projectGh: "https://github.com/majkeloess/blog",
   },
   {
     icons: ["react", "tailwind", "typescript", "api"],

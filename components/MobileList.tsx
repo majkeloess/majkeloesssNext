@@ -1,11 +1,11 @@
 import {
-  IconBrandCpp,
   IconBrandCss3,
   IconBrandFramerMotion,
   IconBrandGit,
   IconBrandHtml5,
   IconBrandJavascript,
   IconBrandNextjs,
+  IconBrandPhp,
   IconBrandReact,
   IconBrandTailwind,
   IconBrandTypescript,
@@ -112,7 +112,7 @@ export default function MobileList() {
           whileHover={{ scale: 1.2 }}
           whileFocus={{ scale: 1.2 }}
         >
-          <IconBrandCpp size={60} color="#38bdf8" />
+          <IconBrandPhp size={60} color="#38bdf8" />
         </MotionLi>
       </MotionUl>
     </div>

@@ -23,6 +23,7 @@ import {
   IconBrandThreejs,
   IconBrandOauth,
   IconBrandPrisma,
+  IconBrandPhp,
 } from "@tabler/icons-react";
 
 const iconMapping: { [key: string]: JSX.Element } = {
@@ -42,6 +43,7 @@ const iconMapping: { [key: string]: JSX.Element } = {
   nodejs: <IconBrandNodejs size={40} key="nodejs" />,
   threejs: <IconBrandThreejs size={40} key="threejs" />,
   oauth: <IconBrandOauth size={40} key="oauth" />,
+  php: <IconBrandPhp size={40} key="php" />,
 };
 
 export default function Card3D({
