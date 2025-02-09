@@ -1,9 +1,8 @@
-import HeroBackground from "@/components/HeroWavyBack";
-
+import HeroPage from "@/components/HeroPage";
 export default function Home() {
   return (
     <div className="bg-black">
-      <HeroBackground />
+      <HeroPage />
     </div>
   );
 }

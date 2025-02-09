@@ -1,9 +1,25 @@
 const projects = [
   {
+    icons: ["nextjs", "tailwind", "typescript", "database"],
+    projectName: "Apollo",
+    projectDescription: "Restaurant reservation system ",
+    projectPhoto: "/przyjemnosc.png",
+    projectGh: "https://github.com/majkeloess/przyjemnosc",
+    projectPage: "https://przyjemnosc.majkeloess.dev/",
+  },
+  {
+    icons: ["nextjs", "tailwind", "typescript"],
+    projectName: "Techmilionerzy",
+    projectDescription: "Quiz game",
+    projectPhoto: "/techmilionerzy.png",
+    projectGh: "https://github.com/majkeloess/techmilionerzy",
+    projectPage: "https://techmilionerzy.majkeloess.dev/",
+  },
+  {
     icons: ["nextjs", "tailwind", "typescript", "prisma", "oauth"],
     projectName: "Apollo",
     projectDescription:
-      "Fullstack social media platform for tracking and sharing your personal development journey",
+      "Fullstack social media platform for tracking and sharing your personal development journey (DEPRECATED, NOT WORKING)",
     projectPhoto: "/apollo_1.png",
     projectGh: "https://github.com/majkeloess/apollo",
     projectPage: "https://apollo.majkeloess.dev/",

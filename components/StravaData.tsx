@@ -49,7 +49,7 @@ export default function StravaData({
               <p>
                 Elevatio<span className="text-blue-400">n</span>
               </p>
-              <p>{elevation_gain} m</p>
+              <p>{elevation_gain.toFixed(0)} m</p>
             </div>
             <div className="h-1 bg-gradient-to-r from-purple-400 via-pink-300 to-pink-500"></div>
           </li>
