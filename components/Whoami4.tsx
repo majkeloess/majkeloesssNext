@@ -12,12 +12,7 @@ export default function Whoami4({ stravaData }: { stravaData: StravaStats }) {
       transition={{ type: "spring", delay: 3.5, duration: 0.8 }}
     >
       <BackgroundGradient className="rounded-[22px] p-6 lg:p-10 bg-black">
-        <StravaData
-          count={stravaData.ytd_run_totals.count}
-          distance={stravaData.ytd_run_totals.distance}
-          moving_time={stravaData.ytd_run_totals.moving_time}
-          elevation_gain={stravaData.ytd_run_totals.elevation_gain}
-        />
+        <StravaData stravaData={stravaData} />
       </BackgroundGradient>
     </MotionDiv>
   );

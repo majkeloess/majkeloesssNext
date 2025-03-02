@@ -19,7 +19,7 @@ export default function Whoami1() {
       className="lg:w-5/6"
     >
       <BackgroundGradient className="rounded-[22px] p-4 lg:p-10 bg-black">
-        <ul className="flex flex-col text-lg gap-2 lg:text-xl  text-white mt-4 mb-2 ">
+        <ul className="flex flex-col text-lg gap-2 lg:text-xl  text-white mt-4 mb-2 font-light">
           <li className="flex flex-row gap-5 items-center">
             <IconUser size={35} />
             <p>
@@ -29,7 +29,7 @@ export default function Whoami1() {
           </li>
           <li className="flex flex-row gap-5 items-center">
             <IconAdjustmentsHeart size={35} />
-            <p>22 years</p>
+            <p>23 years</p>
           </li>
           <li className="flex flex-row gap-5 items-center">
             <IconMapPin size={35} />

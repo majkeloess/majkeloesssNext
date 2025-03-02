@@ -10,7 +10,7 @@ export default function Whoami3() {
       transition={{ type: "spring", delay: 2.8, duration: 0.8 }}
     >
       <BackgroundGradient className="rounded-[22px] p-4 lg:p-10 bg-black">
-        <p className="text-lg lg:text-xl text-white py-2">
+        <p className="text-lg lg:text-xl text-white py-2 font-light">
           My <span className="text-cyan-500">p</span>assion lies in{" "}
           <span className="text-pink-500">s</span>elf development, running and
           working out at the gym.{" "}
