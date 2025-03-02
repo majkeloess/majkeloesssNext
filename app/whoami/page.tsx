@@ -1,5 +1,5 @@
+import Navigation from "@/components/Navigation";
 import WhoAmI from "@/components/WhoAmI";
-import NavWhoami from "@/components/NavWhoami";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function WhoamiPage() {
   return (
     <div className="bg-black">
-      <NavWhoami />
+      <Navigation title="whoami" />
       <WhoAmI />
     </div>
   );

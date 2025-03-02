@@ -2,7 +2,7 @@ import DeviceList from "@/components/DeviceList";
 import Footer from "@/components/Footer";
 import MobileList from "@/components/MobileList";
 import CardGenerator from "@/components/CardGenerator";
-import NavProjects from "@/components/NavProjects";
+import Navigation from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <div className="bg-black">
-      <NavProjects />
+      <Navigation title="projects" />
       <div className="flex flex-col justify-center align-middle">
         <div className="hidden xl:block">
           <DeviceList />

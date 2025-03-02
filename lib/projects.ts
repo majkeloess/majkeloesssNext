@@ -1,8 +1,8 @@
 const projects = [
   {
     icons: ["nextjs", "tailwind", "typescript", "database"],
-    projectName: "Apollo",
-    projectDescription: "Restaurant reservation system ",
+    projectName: "Przyjemnosc",
+    projectDescription: "Restaurant reservation system",
     projectPhoto: "/przyjemnosc.png",
     projectGh: "https://github.com/majkeloess/przyjemnosc",
     projectPage: "https://przyjemnosc.majkeloess.dev/",

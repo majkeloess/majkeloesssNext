@@ -2,38 +2,7 @@ import Whoami1 from "@/components/Whoami1";
 import Whoami2 from "@/components/Whoami2";
 import Whoami3 from "@/components/Whoami3";
 import Whoami4 from "@/components/Whoami4";
-import { unstable_noStore } from "next/cache";
-
-async function getData() {
-  unstable_noStore();
-  const token = await fetch("https://www.strava.com/api/v3/oauth/token", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: new URLSearchParams({
-      client_id: `${process.env.NEXT_PUBLIC_STRAVA_CLIENT_ID}`,
-      client_secret: `${process.env.NEXT_PUBLIC_STRAVA_CLIENT_SECRET}`,
-      grant_type: "refresh_token",
-      refresh_token: `${process.env.NEXT_PUBLIC_STRAVA_REFRESH_TOKEN}`,
-    }),
-  });
-
-  const tokenData = await token.json();
-
-  const data = await fetch(
-    "https://www.strava.com/api/v3/athletes/113560517/stats",
-    {
-      headers: {
-        Accept: "application/json",
-        Authorization: `Bearer ${tokenData.access_token}`,
-      },
-      cache: "reload",
-    }
-  );
-  const jsonData = await data.json();
-  return jsonData;
-}
+import { getData } from "@/lib/appData";
 
 export default async function WhoAmI() {
   const strava = await getData();
@@ -46,12 +15,7 @@ export default async function WhoAmI() {
       </div>
       <div className="lg:w-7/12 flex flex-col lg:flex-row gap-8 mt-10 items-center">
         <Whoami3 />
-        <Whoami4
-          count={strava.ytd_run_totals.count}
-          distance={strava.ytd_run_totals.distance}
-          moving_time={strava.ytd_run_totals.moving_time}
-          elevation_gain={strava.ytd_run_totals.elevation_gain}
-        />
+        <Whoami4 stravaData={strava} />
       </div>
     </div>
   );
