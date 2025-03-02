@@ -1,12 +1,9 @@
 import animations from "@/lib/motion";
 import Link from "next/link";
 import { MotionDiv } from "./MotionDiv";
+import { PageType } from "@/lib/types";
 
-export default function Navigation({
-  title,
-}: {
-  title: "whoami" | "projects";
-}) {
+export default function Navigation({ title }: { title: PageType }) {
   return (
     <MotionDiv
       variants={animations.navVariants}

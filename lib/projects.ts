@@ -3,7 +3,7 @@ const projects = [
     icons: ["nextjs", "tailwind", "typescript", "database"],
     projectName: "Przyjemnosc",
     projectDescription: "Restaurant reservation system",
-    projectPhoto: "/przyjemnosc.png",
+    projectPhoto: "/przyjemnosc.webp",
     projectGh: "https://github.com/majkeloess/przyjemnosc",
     projectPage: "https://przyjemnosc.majkeloess.dev/",
   },
@@ -11,7 +11,7 @@ const projects = [
     icons: ["nextjs", "tailwind", "typescript"],
     projectName: "Techmilionerzy",
     projectDescription: "Quiz game",
-    projectPhoto: "/techmilionerzy.png",
+    projectPhoto: "/techmilionerzy.webp",
     projectGh: "https://github.com/majkeloess/techmilionerzy",
     projectPage: "https://techmilionerzy.majkeloess.dev/",
   },
@@ -20,7 +20,7 @@ const projects = [
     projectName: "Apollo",
     projectDescription:
       "Fullstack social media platform for tracking and sharing your personal development journey (DEPRECATED, NOT WORKING)",
-    projectPhoto: "/apollo_1.png",
+    projectPhoto: "/apollo_1.webp",
     projectGh: "https://github.com/majkeloess/apollo",
     projectPage: "https://apollo.majkeloess.dev/",
   },
@@ -29,7 +29,7 @@ const projects = [
     projectName: "matchflix",
     projectDescription:
       "Is a movie-swiping app, similar to Tinder but for movies. Users can filter movies by genre, making it easy to find films that match their preferences.",
-    projectPhoto: "/matchflix.png",
+    projectPhoto: "/matchflix.webp",
     projectGh: "https://github.com/majkeloess/matchflix",
     projectPage: "https://majkeloess.github.io/matchflix/",
   },
@@ -38,7 +38,7 @@ const projects = [
     projectName: "learnTube",
     projectDescription:
       "Application is an simple learning platform where you can search for videos, watch them and make notes",
-    projectPhoto: "/learnTube.png",
+    projectPhoto: "/learnTube.webp",
     projectGh: "https://github.com/majkeloess/learnTube",
   },
   {
@@ -53,14 +53,14 @@ const projects = [
     icons: ["php", "tailwind"],
     projectName: "placeholderShop",
     projectDescription: "shop website built with Symfony PHP & Twig",
-    projectPhoto: "/placeholder.png",
+    projectPhoto: "/placeholder.webp",
     projectGh: "https://github.com/majkeloess/placeholderShop",
   },
   {
     icons: ["php", "css"],
     projectName: "blog",
     projectDescription: "minimalistic dynamic blog website",
-    projectPhoto: "/blog.png",
+    projectPhoto: "/blog.webp",
     projectGh: "https://github.com/majkeloess/blog",
   },
   {

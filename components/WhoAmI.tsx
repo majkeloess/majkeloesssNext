@@ -3,6 +3,11 @@ import Whoami2 from "@/components/Whoami2";
 import Whoami3 from "@/components/Whoami3";
 import Whoami4 from "@/components/Whoami4";
 import { getData } from "@/lib/appData";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "whoami",
+};
 
 export default async function WhoAmI() {
   const strava = await getData();
