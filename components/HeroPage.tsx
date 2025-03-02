@@ -2,19 +2,62 @@ import Link from "next/link";
 
 const HeroPage = () => {
   return (
-    <div>
-      <div className="flex flex-col gap-4 z-50">
-        <Link href="/whoami">
-          <button className="text-[#38bdf8] text-[10vw] leading-[120px] uppercase">
-            whoami
-          </button>
-        </Link>
-        <Link href="/projects">
-          <button className="text-[#e879f9] text-[10vw] leading-[96px] uppercase">
+    <div className="overflow-hidden h-screen w-screen relative">
+      <div className="flex xl:gap-16 gap-8 xl:mt-12 mt-8 xl:ml-12 ml-8">
+        <section>
+          <h1 className="text-white xl:text-4xl text-2xl font-normal">
+            frontend engineer
+          </h1>
+          <h3 className="text-white xl:text-sm text-xs text-right font-light">
+            @majkeloess, 2025
+          </h3>
+        </section>
+        <nav className="flex flex-col text-white text-2xl font-light">
+          <Link className="text-[#e879f9] " href="/projects">
             projects
-          </button>
-        </Link>
+          </Link>
+          <Link className="text-[#22d3ee]" href="/whoami">
+            whoami
+          </Link>
+        </nav>
       </div>
+      <section>
+        {[
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+          "majkeloess",
+        ].map((char, index) => (
+          <span
+            style={{
+              transform: `rotate(${5 * index}deg)`,
+              opacity: `${100 - 6 * index}%`,
+              fontSize: `200px`,
+            }}
+            className="text-[#c084fc] absolute origin-left"
+            key={index}
+          >
+            {char}
+          </span>
+        ))}
+      </section>
     </div>
   );
 };
