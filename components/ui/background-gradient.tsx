@@ -11,7 +11,7 @@ export default function BackgroundGradient({
   containerClassName?: string;
 }) {
   return (
-    <div className={cn("relative p-[4px] group", containerClassName)}>
+    <div className={cn("relative p-[2px] group", containerClassName)}>
       <div
         className={cn(
           "absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",

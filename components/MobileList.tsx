@@ -22,7 +22,7 @@ export default function MobileList() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ type: "spring", delay: 1.2, duration: 1 }}
-        className="text-center text-2xl font-medium mt-28 mb-8 mx-5"
+        className="text-center text-2xl font-normal mt-28 mb-8 mx-5"
       >
         Techno<span className="text-pink-500">lo</span>gies I ha
         <span className="text-pink-500">ve</span>{" "}

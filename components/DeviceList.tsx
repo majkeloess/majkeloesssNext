@@ -23,7 +23,7 @@ export default function DeviceList() {
       className="flex flex-row justify-center align-middle items-center gap-1 mb-12 mt-32"
     >
       <MotionLi variants={animations.listItem}>
-        <p className=" text-2xl font-medium mx-5">
+        <p className=" text-2xl font-normal mx-5">
           Techno<span className="text-pink-500">lo</span>gies I ha
           <span className="text-pink-500">ve</span>{" "}
           <span className="bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-500 text-transparent bg-clip-text">
