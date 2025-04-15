@@ -1,7 +1,7 @@
-import { Navigation } from "@/components/navigation";
 import { ProjectList } from "@/components/projects";
 import { TechnologyList } from "@/components/tech-list";
 import type { Metadata } from "next";
+import { Navigation } from "@/components/nav";
 
 export const metadata: Metadata = {
   title: "projects",

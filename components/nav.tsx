@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MotionDiv } from "./motion/MotionDiv";
 import type { PageType } from "@/lib/types";
 
-export function Navigation({ title }: { title: PageType }) {
+export const Navigation = ({ title }: { title: PageType }) => {
   return (
     <MotionDiv
       variants={animations.navVariants}
@@ -30,4 +30,4 @@ export function Navigation({ title }: { title: PageType }) {
       <div className="h-[1px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400" />
     </MotionDiv>
   );
-}
+}; 

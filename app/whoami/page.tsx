@@ -1,6 +1,6 @@
-import { Navigation } from "@/components/navigation";
 import WhoAmI from "@/components/whoami-root";
 import type { Metadata } from "next";
+import { Navigation } from "@/components/nav";
 
 export const metadata: Metadata = {
   title: "whoami",

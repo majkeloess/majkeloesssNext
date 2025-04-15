@@ -1,9 +1,11 @@
 import BackgroundGradient from "@/components/ui/background-gradient";
 import StravaData from "@/components/strava-data";
 import { MotionDiv } from "@/components/motion/MotionDiv";
-import type { StravaStats } from "@/lib/types";
+import { getData } from "@/lib/app-data";
 
-export default function Whoami4({ stravaData }: { stravaData: StravaStats }) {
+export default async function Whoami4() {
+  const stravaData = await getData();
+
   return (
     <MotionDiv
       className="lg:w-5/12"
