@@ -1,6 +1,6 @@
 import BackgroundGradient from "@/components/ui/background-gradient";
-import { MotionDiv } from "./MotionDiv";
-import SocialList from "./SocialList";
+import { MotionDiv } from "@/components/motion/MotionDiv";
+import SocialList from "@/components/socials";
 
 export default function Whoami2() {
   return (

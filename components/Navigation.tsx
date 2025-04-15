@@ -1,9 +1,9 @@
 import animations from "@/lib/motion";
 import Link from "next/link";
-import { MotionDiv } from "./MotionDiv";
-import { PageType } from "@/lib/types";
+import { MotionDiv } from "./motion/MotionDiv";
+import type { PageType } from "@/lib/types";
 
-export default function Navigation({ title }: { title: PageType }) {
+export function Navigation({ title }: { title: PageType }) {
   return (
     <MotionDiv
       variants={animations.navVariants}
@@ -27,7 +27,7 @@ export default function Navigation({ title }: { title: PageType }) {
           </>
         )}
       </p>
-      <div className="h-[1px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400"></div>
+      <div className="h-[1px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400" />
     </MotionDiv>
   );
 }

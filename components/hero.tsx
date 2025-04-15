@@ -13,10 +13,16 @@ const HeroPage = () => {
           </h3>
         </section>
         <nav className="flex flex-col text-white text-2xl font-light">
-          <Link className="text-[#e879f9] " href="/projects">
+          <Link
+            className="text-[#e879f9] hover:text-[#c084fc] transition-colors duration-300"
+            href="/projects"
+          >
             projects
           </Link>
-          <Link className="text-[#22d3ee]" href="/whoami">
+          <Link
+            className="text-[#22d3ee] hover:text-[#38bdf8] transition-colors duration-300"
+            href="/whoami"
+          >
             whoami
           </Link>
         </nav>
@@ -49,10 +55,11 @@ const HeroPage = () => {
             style={{
               transform: `rotate(${5 * index}deg)`,
               opacity: `${100 - 6 * index}%`,
-              fontSize: `200px`,
+              fontSize: "200px",
             }}
             className="text-[#c084fc] absolute origin-left"
-            key={index}
+            // biome-ignore lint/suspicious/noArrayIndexKey: <expectted>
+            key={char + index}
           >
             {char}
           </span>

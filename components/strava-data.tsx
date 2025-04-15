@@ -1,5 +1,5 @@
 import { IconRun } from "@tabler/icons-react";
-import { StravaStats } from "@/lib/types";
+import type { StravaStats } from "@/lib/types";
 
 export default function StravaData({
   stravaData,
@@ -24,14 +24,14 @@ export default function StravaData({
               </p>
               <p> {stravaData.ytd_run_totals.count}</p>
             </div>
-            <div className="h-[1px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400"></div>
+            <div className="h-[1px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400" />
           </li>
           <li className="mb-2">
             <div className="flex flex-row justify-between">
               <p>Distance</p>
               <p>{Math.ceil(stravaData.ytd_run_totals.distance / 1000)} km</p>
             </div>
-            <div className="h-[1px] bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-400"></div>
+            <div className="h-[1px] bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-400" />
           </li>
           <li className="mb-2">
             <div className="flex flex-row justify-between">
@@ -40,7 +40,7 @@ export default function StravaData({
                 {Math.ceil(stravaData.ytd_run_totals.moving_time / 60)} min{" "}
               </p>
             </div>
-            <div className="h-[1px] bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500"></div>
+            <div className="h-[1px] bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500" />
           </li>
           <li className="mb-2">
             <div className="flex flex-row justify-between">
@@ -49,7 +49,7 @@ export default function StravaData({
               </p>
               <p>{stravaData.ytd_run_totals.elevation_gain.toFixed(0)} m</p>
             </div>
-            <div className="h-[1px] bg-gradient-to-r from-purple-400 via-pink-300 to-pink-500"></div>
+            <div className="h-[1px] bg-gradient-to-r from-purple-400 via-pink-300 to-pink-500" />
           </li>
         </ul>
       </div>

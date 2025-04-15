@@ -28,5 +28,22 @@ export const stravaStatsSchema = z.object({
 
 export type StravaStats = z.infer<typeof stravaStatsSchema>;
 
-
 export type PageType = "whoami" | "projects";
+
+export type Project =
+  | {
+      icons: string[];
+      projectName: string;
+      projectDescription: string;
+      projectPhoto: string;
+      projectGh: string;
+      projectPage: string;
+    }
+  | {
+      icons: string[];
+      projectName: string;
+      projectDescription: string;
+      projectPhoto: string;
+      projectGh: string;
+      projectPage?: undefined;
+    };

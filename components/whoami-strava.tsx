@@ -1,7 +1,7 @@
 import BackgroundGradient from "@/components/ui/background-gradient";
-import StravaData from "./StravaData";
-import { MotionDiv } from "./MotionDiv";
-import { StravaStats } from "@/lib/types";
+import StravaData from "@/components/strava-data";
+import { MotionDiv } from "@/components/motion/MotionDiv";
+import type { StravaStats } from "@/lib/types";
 
 export default function Whoami4({ stravaData }: { stravaData: StravaStats }) {
   return (

@@ -8,7 +8,7 @@ import {
 } from "@tabler/icons-react";
 import Link from "next/link";
 import BackgroundGradient from "@/components/ui/background-gradient";
-import { MotionDiv } from "./MotionDiv";
+import { MotionDiv } from "@/components/motion/MotionDiv";
 
 export default function Whoami1() {
   return (

@@ -35,8 +35,8 @@ const animations = {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 1.5,
-        staggerChildren: 0.3,
+        delayChildren: 1.2,
+        staggerChildren: 0.1,
       },
     },
   },
@@ -45,8 +45,8 @@ const animations = {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 3.2,
-        staggerChildren: 0.3,
+        delayChildren: 1.8,
+        staggerChildren: 0.1,
       },
     },
   },

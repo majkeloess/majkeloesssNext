@@ -1,4 +1,5 @@
-import HeroPage from "@/components/HeroPage";
+import HeroPage from "@/components/hero";
+
 export default function Home() {
   return (
     <div className="bg-black">

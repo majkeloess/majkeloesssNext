@@ -1,5 +1,5 @@
 import { unstable_noStore } from "next/cache";
-import { StravaStats, stravaStatsSchema } from "@/lib/types";
+import { type StravaStats, stravaStatsSchema } from "@/lib/types";
 
 export async function getData(): Promise<StravaStats> {
   unstable_noStore();

@@ -1,12 +1,12 @@
 import cn from "@/lib/utils";
-import React from "react";
+import type { ReactNode } from "react";
 
 export default function BackgroundGradient({
   children,
   className,
   containerClassName,
 }: {
-  children?: React.ReactNode;
+  children?: ReactNode;
   className?: string;
   containerClassName?: string;
 }) {

@@ -1,5 +1,5 @@
 import BackgroundGradient from "@/components/ui/background-gradient";
-import { MotionDiv } from "./MotionDiv";
+import { MotionDiv } from "@/components/motion/MotionDiv";
 
 export default function Whoami3() {
   return (
