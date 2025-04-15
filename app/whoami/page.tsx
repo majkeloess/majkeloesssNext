@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "whoami",
 };
 
+export const experimental_ppr = true
+
+
 export default function WhoamiPage() {
   return (
     <div className="bg-black">

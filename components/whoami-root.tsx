@@ -3,6 +3,7 @@ import Whoami2 from "@/components/whoami-socials";
 import Whoami3 from "@/components/whoami-about";
 import Whoami4 from "@/components/whoami-strava";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "whoami",
@@ -17,7 +18,9 @@ export default function WhoAmI() {
       </div>
       <div className="lg:w-7/12 flex flex-col lg:flex-row gap-8 mt-10 items-center">
         <Whoami3 />
-        <Whoami4 />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Whoami4 />
+        </Suspense>
       </div>
     </div>
   );
