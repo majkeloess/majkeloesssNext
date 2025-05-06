@@ -1,13 +1,12 @@
-import WhoAmI from "@/components/whoami-root";
-import type { Metadata } from "next";
-import { Navigation } from "@/components/nav";
+import WhoAmI from "@/components/whoami"
+import type { Metadata } from "next"
+import { Navigation } from "@/components/nav"
 
 export const metadata: Metadata = {
   title: "whoami",
-};
+}
 
 export const experimental_ppr = true
-
 
 export default function WhoamiPage() {
   return (
@@ -15,5 +14,5 @@ export default function WhoamiPage() {
       <Navigation title="whoami" />
       <WhoAmI />
     </div>
-  );
+  )
 }

@@ -1,32 +1,36 @@
-const projects = [
+import { Project } from "./types"
+
+const projects: Project[] = [
   {
     icons: ["nextjs", "tailwind", "typescript", "database"],
     projectName: "Przyjemnosc",
-    projectDescription: "Restaurant reservation system",
+    projectDescription:
+      "Restaurant reservation system, implemented in Next.js with PostgreSQL. You can book a table, see the menu and order food. As admin you can manage reservations and menu.",
     projectPhoto: "/przyjemnosc.webp",
     projectGh: "https://github.com/majkeloess/przyjemnosc",
     projectPage: "https://przyjemnosc.majkeloess.dev/",
   },
   {
-    icons: ["nextjs", "tailwind", "typescript"],
-    projectName: "Techmilionerzy",
-    projectDescription: "Quiz game",
-    projectPhoto: "/techmilionerzy.webp",
-    projectGh: "https://github.com/majkeloess/techmilionerzy",
-    projectPage: "https://techmilionerzy.majkeloess.dev/",
-  },
-  {
     icons: ["nextjs", "tailwind", "typescript", "prisma", "oauth"],
     projectName: "Apollo",
     projectDescription:
-      "Fullstack social media platform for tracking and sharing your personal development journey (DEPRECATED, NOT WORKING)",
+      "Skeleton of social media platform for tracking and sharing your personal development journey",
     projectPhoto: "/apollo_1.webp",
     projectGh: "https://github.com/majkeloess/apollo",
     projectPage: "https://apollo.majkeloess.dev/",
   },
   {
+    icons: ["nextjs", "tailwind", "typescript"],
+    projectName: "Techmilionerzy",
+    projectDescription:
+      "Quiz game for tech enthusiasts written in polish language😜",
+    projectPhoto: "/techmilionerzy.webp",
+    projectGh: "https://github.com/majkeloess/techmilionerzy",
+    projectPage: "https://techmilionerzy.majkeloess.dev/",
+  },
+  {
     icons: ["react", "tailwind", "typescript"],
-    projectName: "matchflix",
+    projectName: "Matchflix",
     projectDescription:
       "Is a movie-swiping app, similar to Tinder but for movies. Users can filter movies by genre, making it easy to find films that match their preferences.",
     projectPhoto: "/matchflix.webp",
@@ -99,7 +103,7 @@ const projects = [
   {
     icons: ["html", "css", "javascript"],
     projectName: "simpleCalculator",
-    projectDescription: "My first project :)",
+    projectDescription: "My first project 🤠",
     projectPhoto: "/calc.webp",
     projectGh: "https://github.com/majkeloess/calculator",
     projectPage: "https://majkeloess.github.io/calculator/",
@@ -113,6 +117,6 @@ const projects = [
     projectGh: "https://github.com/majkeloess/wordleGame",
     projectPage: "https://majkeloess.github.io/wordleGame/",
   },
-];
+]
 
-export default projects;
+export default projects

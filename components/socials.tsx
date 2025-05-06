@@ -1,40 +1,36 @@
-import Link from "next/link";
+import { AnimatedMotionDivWithBackground } from "@/components/motion/MotionDiv"
+
+import Link from "next/link"
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandStrava,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
-import { MotionLi } from "./motion/MotionLi";
+} from "@tabler/icons-react"
+import { MotionLi } from "./motion/MotionLi"
 
 type SocialItem = {
-  href: string;
-  icon: React.ReactNode;
-  color: string;
-};
+  href: string
+  icon: React.ReactNode
+  color: string
+}
 
 const socialItems: SocialItem[] = [
   {
-    href: "https://www.instagram.com/majkeloess/",
-    icon: <IconBrandInstagram size={64} color="#e879f9" />,
-    color: "#e879f9",
-  },
-  {
     href: "https://www.linkedin.com/in/majkeloess/",
-    icon: <IconBrandLinkedin size={64} color="#c084fc" />,
+    icon: <IconBrandLinkedin size={60} color="#c084fc" />,
     color: "#c084fc",
   },
   {
     href: "https://github.com/majkeloess",
-    icon: <IconBrandGithub size={64} color="#38bdf8" />,
+    icon: <IconBrandGithub size={60} color="#38bdf8" />,
     color: "#38bdf8",
   },
   {
     href: "https://www.strava.com/athletes/113560517",
-    icon: <IconBrandStrava size={64} color="#22d3ee" />,
+    icon: <IconBrandStrava size={60} color="#22d3ee" />,
     color: "#22d3ee",
   },
-];
+]
 
 const ListItem = ({ href, icon }: SocialItem) => {
   return (
@@ -43,15 +39,23 @@ const ListItem = ({ href, icon }: SocialItem) => {
         {icon}
       </Link>
     </MotionLi>
-  );
-};
+  )
+}
 
-export default function SocialList() {
+const SocialList = () => {
   return (
-    <ul className="flex lg:flex-col flex-row items-center gap-2">
+    <ul className="flex lg:flex-col flex-row items-center justify-evenly w-full lg:h-48">
       {socialItems.map((item) => (
         <ListItem key={item.href} {...item} />
       ))}
     </ul>
-  );
+  )
+}
+
+export const Socials = () => {
+  return (
+    <AnimatedMotionDivWithBackground>
+      <SocialList />
+    </AnimatedMotionDivWithBackground>
+  )
 }

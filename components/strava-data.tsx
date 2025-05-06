@@ -1,22 +1,19 @@
-import { IconRun } from "@tabler/icons-react";
-import type { StravaStats } from "@/lib/types";
+import type { StravaStats } from "@/lib/types"
 
 export default function StravaData({
   stravaData,
 }: {
-  stravaData: StravaStats;
+  stravaData: StravaStats
 }) {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-full lg:h-48">
       <div className="flex flex-row text-2xl lg:text-sm xl:text-2xl items-center">
-        <p className="flex items-center justify-center text-2xl lg:text-sm xl:text-2xl">
-          My
-          <IconRun size={50} color="#38bdf8" />
-          this year:{" "}
+        <p className="flex items-center justify-center text-xl lg:text-2xl">
+          My running stats this year:
         </p>
       </div>
-      <div className="text-xl  text-white mt-4 mb-2 text-center font-light">
-        <ul className="w-[300px] xl:w-[250px] 2xl:w-[300px] lg:w-[200px]">
+      <div className="text-xl text-white mt-4 mb-2 text-center font-light w-full">
+        <ul className="w-full">
           <li className="mb-2">
             <div className="flex flex-row justify-between ">
               <p>
@@ -54,5 +51,5 @@ export default function StravaData({
         </ul>
       </div>
     </div>
-  );
+  )
 }

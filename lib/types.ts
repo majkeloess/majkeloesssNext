@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod"
 
 const totalsSchema = z.object({
   count: z.number(),
@@ -6,11 +6,11 @@ const totalsSchema = z.object({
   moving_time: z.number(),
   elapsed_time: z.number(),
   elevation_gain: z.number(),
-});
+})
 
 const recentTotalsSchema = totalsSchema.extend({
   achievement_count: z.number(),
-});
+})
 
 export const stravaStatsSchema = z.object({
   biggest_ride_distance: z.number(),
@@ -24,26 +24,17 @@ export const stravaStatsSchema = z.object({
   ytd_ride_totals: totalsSchema,
   ytd_run_totals: totalsSchema,
   ytd_swim_totals: totalsSchema,
-});
+})
 
-export type StravaStats = z.infer<typeof stravaStatsSchema>;
+export type StravaStats = z.infer<typeof stravaStatsSchema>
 
-export type PageType = "whoami" | "projects";
+export type PageType = "whoami" | "projects"
 
-export type Project =
-  | {
-      icons: string[];
-      projectName: string;
-      projectDescription: string;
-      projectPhoto: string;
-      projectGh: string;
-      projectPage: string;
-    }
-  | {
-      icons: string[];
-      projectName: string;
-      projectDescription: string;
-      projectPhoto: string;
-      projectGh: string;
-      projectPage?: undefined;
-    };
+export type Project = {
+  icons: string[]
+  projectName: string
+  projectDescription: string
+  projectPhoto: string
+  projectGh: string
+  projectPage?: string
+}

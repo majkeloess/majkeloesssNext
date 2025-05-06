@@ -1,7 +1,7 @@
 import { unstable_noStore } from "next/cache";
 import { type StravaStats, stravaStatsSchema } from "@/lib/types";
 
-export async function getData(): Promise<StravaStats> {
+export async function getStravaData(): Promise<StravaStats> {
   unstable_noStore();
   const token = await fetch("https://www.strava.com/api/v3/oauth/token", {
     method: "POST",

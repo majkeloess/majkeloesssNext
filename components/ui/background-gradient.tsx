@@ -1,17 +1,17 @@
-import cn from "@/lib/utils";
-import type { ReactNode } from "react";
+import cn from "@/lib/utils"
+import type { ReactNode } from "react"
 
 export default function BackgroundGradient({
   children,
   className,
   containerClassName,
 }: {
-  children?: ReactNode;
-  className?: string;
-  containerClassName?: string;
+  children?: ReactNode
+  className?: string
+  containerClassName?: string
 }) {
   return (
-    <div className={cn("relative p-[2px] group", containerClassName)}>
+    <div className={cn("relative p-[2px] group ", containerClassName)}>
       <div
         className={cn(
           "absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",
@@ -25,7 +25,14 @@ export default function BackgroundGradient({
         )}
       />
 
-      <div className={cn("relative z-10", className)}>{children}</div>
+      <div
+        className={cn(
+          "relative z-10 rounded-[22px] p-6 lg:p-10 bg-black",
+          className
+        )}
+      >
+        {children}
+      </div>
     </div>
-  );
+  )
 }
